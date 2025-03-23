@@ -2,6 +2,7 @@
 var animid;
 
 const char = ["KE", "RA", "TO", "JA", "SH", "RE", "JU", "TH", "HE", "MA"];
+const charFolder = ["kenshiro", "raoh", "toki", "jagi", "shin", "rei", "juda", "thouther", "heart", "mamiya"];
 const boost = [
     0, 28.799999237060547, 25.920000076293945, 23.328001022338867, 20.995201110839844,
     18.895681381225586, 17.006113052368164, 15.305501937866211, 13.774951934814453,
@@ -311,8 +312,9 @@ function loadImage() {
     stage_img.src = "tokistage.jpg";
     for (var i = 0; i < p1elem.length; i++) {
         p1_img[i].src =
-            "https://tikinaga.xyz/achokuto_database/wp-content/uploads/" +
-            char[p1char] +
+            "./images/" +
+            charFolder[p1Char] + "/"
+            char[p1Char] +
             "_" +
             p1stateno +
             "_" +
